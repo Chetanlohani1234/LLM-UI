@@ -39,17 +39,24 @@ const IndexTwo = () => {
                         </div>
                         {/* <!-- header top end --> */}
                         <div className="header-main-two header--sticky">
-                            <a href="index.html">
-                                <img src="assets/images/logo/03.svg" alt="logo"/>
-                            </a>
+                            {/* <a href="/">
+                                <img src="assets/images/logo/logo.jpg" alt="logo"/>
+                            </a> */}
+
+                        <a href="/" style={{display: "inline-block"}}>
+                            <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                        </a>
+
+
                             {/* <!-- nav --> */}
                             <div className="nav-area-main d-xl-block d-lg-block d-md-none d-sm-none d-none">
                                 <nav>
                                     <ul>
-                                        <li className="has-dropdown">
+                                    <li><a className="links-main" href="">Home</a></li>
+
+                                        {/* <li className="has-dropdown">
                                             <a className="links-main" href="/">Home</a>
                                             <ul className="submenu">
-                                               {/* <li><a href="/index-page-1">Content Writing 01</a></li> */}
                                                <li><a href='/IndexOne'>Content Writing 01</a></li>
                                                 <li><a href="/">Content Writing 02</a></li>
                                                 <li><a href="/IndexThree">Content Writing 03</a></li>
@@ -58,8 +65,8 @@ const IndexTwo = () => {
                                                 <li><a href="/">Image Generator <span>New</span></a></li>
                                                 <li><a href="/">Photo Stock <span>New</span></a></li>
                                             </ul>
-                                        </li>
-                                        <li><a className="links-main" href="/UseCase">Use Cases</a></li>
+                                        </li> */}
+                                        {/* <li><a className="links-main" href="/UseCase">Use Cases</a></li> */}
                                         <li className="has-dropdown mega-menu">
                                             <a className="links-main" href="#">Pages</a>
                                             <div className="rts-mega-menu">
@@ -68,16 +75,16 @@ const IndexTwo = () => {
                                                         <div className="col-lg-3">
                                                             <ul className="mega-menu-item">
                                                                 <li>
-                                                                    <a href="/AboutOpenUp">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/01.svg" alt="icon"/>
                                                                         <div className="info">
-                                                                            <p>About OpenUp</p>
-                                                                            <span>Get know about openup </span>
+                                                                            <p>About Vagonon</p>
+                                                                            <span>Get know about Vagonon </span>
                                                                         </div>
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/UseCase">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/02.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Use Cases</p>
@@ -86,7 +93,7 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Pricing">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/03.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Pricing</p>
@@ -95,7 +102,7 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Login">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/04.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Login</p>
@@ -108,7 +115,7 @@ const IndexTwo = () => {
                                                         <div className="col-lg-3">
                                                             <ul className="mega-menu-item">
                                                                 <li>
-                                                                    <a href="/Blog">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/05.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Blog</p>
@@ -117,7 +124,7 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/UseCasesDetails">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/06.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Use Cases Details</p>
@@ -126,16 +133,16 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Pricing2">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/07.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Pricing 2</p>
-                                                                            <span>Openup provide pro price</span>
+                                                                            <span>Vagonon provide pro price</span>
                                                                         </div>
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Register">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/08.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Register</p>
@@ -148,7 +155,7 @@ const IndexTwo = () => {
                                                         <div className="col-lg-3">
                                                             <ul className="mega-menu-item">
                                                                 <li>
-                                                                    <a href="/BlogDetails">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/09.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Blog Details</p>
@@ -157,7 +164,7 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/UseCases2">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/10.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Use Cases 2</p>
@@ -166,16 +173,16 @@ const IndexTwo = () => {
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Pricing3">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/11.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Pricing 3</p>
-                                                                            <span>Openup provide pro price</span>
+                                                                            <span>Vagonon provide pro price</span>
                                                                         </div>
                                                                     </a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="/Reset">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/12.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Reset</p>
@@ -188,11 +195,11 @@ const IndexTwo = () => {
                                                         <div className="col-lg-3">
                                                             <ul className="mega-menu-item">
                                                                 <li>
-                                                                    <a href="/Contact">
+                                                                    <a href="#">
                                                                         <img src="assets/images/mega-menu/13.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>Contact</p>
-                                                                            <span>Contact with openup</span>
+                                                                            <span>Contact with Vagonon</span>
                                                                         </div>
                                                                     </a>
                                                                 </li>
@@ -210,7 +217,7 @@ const IndexTwo = () => {
                                                                         <img src="assets/images/mega-menu/15.svg" alt="icon"/>
                                                                         <div className="info">
                                                                             <p>FAQ</p>
-                                                                            <span>Do you know openup</span>
+                                                                            <span>Do you know Vagonon</span>
                                                                         </div>
                                                                     </a>
                                                                 </li>
@@ -230,8 +237,8 @@ const IndexTwo = () => {
                                             </div>
 
                                         </li>
-                                        <li><a className="links-main" href="/Feature">Feature</a></li>
-                                        <li className="has-dropdown">
+                                        <li><a className="links-main" href="#">Feature</a></li>
+                                        {/* <li className="has-dropdown">
                                             <a className="links-main" href="#">Shop</a>
                                             <ul className="submenu">
                                                 <li><a href="/ProductDetails">Product Details</a></li>
@@ -239,7 +246,7 @@ const IndexTwo = () => {
                                                 <li><a href="/Checkout">Checkout</a></li>
                                                 <li><a href="/MyAccount">My Account</a></li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li><a className="links-main" href="/Contact">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -247,7 +254,7 @@ const IndexTwo = () => {
                             {/* <!-- nav end --> */}
                             <div className="button-area">
                                 <a href="/Login">Login</a>
-                                <a href="/AboutOpenUp" className="rts-btn btn-primary">Get Started</a>
+                                <a href="#" className="rts-btn btn-primary">Get Started</a>
                             </div>
                             <div className="menu-btn d-xl-none d-lg-none d-md-block d-sm-block" id="menu-btn">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -268,7 +275,7 @@ const IndexTwo = () => {
                     <div className="row">
                         <div className="col-lg-7">
                             <div className="banner-two-inner-content pb--180 pb_md--180 pb_sm--100 pt--200 pt_md--100 pt_sm--20">
-                                <span className="pre-title">Welcome to Openup</span>
+                                <span className="pre-title">Welcome to Vagonon</span>
                                 <h1 className="title">
                                     Best AI Writer for <br />
                                     Creating <span>Blog Articles.</span>
@@ -1283,14 +1290,19 @@ const IndexTwo = () => {
                             <div class="footer-one-main-wrapper">
                                 {/* <!-- single sized  footer  --> */}
                                 <div class="footer-singl-wized left-logo">
-                                    <div class="head">
+                                    {/* <div class="head">
                                         <a href="#">
                                             <img src="assets/images/logo/02.svg" alt="logo"/>
                                         </a>
-                                    </div>
+                                    </div> */}
+
+                   <a href="/" style={{display: "inline-block"}}>
+                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                    </a>
+
                                     <div class="body">
                                         <p class="dsic mb--25">
-                                            Openup is an artificial intelligence trained to automate important tasks such writing optimized product descriptions.
+                                            Vagonon is an artificial intelligence trained to automate important tasks such writing optimized product descriptions.
                                         </p>
                                         <div class="social-area-one">
                                             <ul>

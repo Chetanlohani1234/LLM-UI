@@ -9,19 +9,23 @@ const Login = () => {
       <div className="row">
         <div className="col-lg-12">
           <div className="header-main-wrapper">
-            <a href="index.html" className="logo">
-              <img src="assets/images/logo/01.svg" alt="logo" />
-            </a>
+            {/* <a href="index.html" className="logo">
+              <img src="assets/images/logo/logo.jpg" alt="logo" />
+            </a> */}
+
+                    <a href="/" style={{display: "inline-block"}}>
+                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                    </a>
+
             {/* nav */}
             <div className="nav-area-main d-xl-block d-lg-block d-md-none d-sm-none d-none">
-              <nav>
+              {/* <nav>
                 <ul>
                   <li className="has-dropdown">
                     <a className="links-main" href="#">
                       Home
                     </a>
                     <ul className="submenu">
-                        {/* <li><a href="/index-page-1">Content Writing 01</a></li> */}
                         <li><a href='/IndexOne'>Content Writing 01</a></li>
                         <li><a href="/">Content Writing 02</a></li>
                         <li><a href="/IndexThree">Content Writing 03</a></li>
@@ -237,17 +241,17 @@ const Login = () => {
                     </a>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
             </div>
             {/* nav end */}
-            <div className="button-area">
+            {/* <div className="button-area">
               <a href="/Login" className="rts-btn btn-lonly mr--30">
                 Sign in
               </a>
               <a href="/AboutOpenUp" className="rts-btn btn-blur">
                 Get Started
               </a>
-            </div>
+            </div> */}
             <div
               className="menu-btn d-xl-none d-lg-none d-md-block d-sm-block"
               id="menu-btn"
@@ -415,7 +419,7 @@ const Login = () => {
                 All set to level up <br />
                 your content game?
               </h3>
-              <a href="/AboutOpenUp" className="rts-btn btn-primary">
+              <a href="/" className="rts-btn btn-primary">
                 Get Started Now
               </a>
             </div>
@@ -439,13 +443,18 @@ const Login = () => {
             {/* single sized  footer  */}
             <div className="footer-singl-wized left-logo">
               <div className="head">
-                <a href="#">
+                {/* <a href="#">
                   <img src="assets/images/logo/01.svg" alt="logo" />
-                </a>
+                </a> */}
+
+                    <a href="/" style={{display: "inline-block"}}>
+                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                    </a>
+
               </div>
               <div className="body">
                 <p className="dsic">
-                  Openup is an artificial intelligence trained to automate
+                  Vagonon is an artificial intelligence trained to automate
                   important tasks such writing optimized product descriptions.
                 </p>
                 <div className="social-style-two">
