@@ -1370,7 +1370,7 @@ const IndexTwo = () => {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="copy-right-two">
-                                <p><a href="#">Reactheme</a> 2023. All Rights Reserved.</p>
+                                <p><a href="#">Reactheme</a>© Copyright Stesso Technology. All Rights Reserved</p>
                                 <div class="menu">
                                     <ul>
                                         <li><a href="#">Tearms</a></li>
