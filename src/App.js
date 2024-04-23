@@ -24,6 +24,7 @@ import Cart from "./Shop/Cart";
 import Checkout from "./Shop/Checkout";
 import MyAccount from "./Shop/MyAccount";
 import ProductDetails from "./Shop/ProductDetails";
+import Registration from "./Pages/Registration";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route path="/IndexOne" element={<IndexOne />}/>
-        <Route path="/" element={<IndexTwo />} />
+        <Route path="/IndexTwo" element={<IndexTwo />} />
         <Route path="/IndexThree" element={<IndexThree />} />
         <Route path="/IndexFour" element={<IndexFour />}/>
         <Route path="/IndexFive" element={<IndexFive />}/>
@@ -44,7 +45,7 @@ function App() {
         <Route path="/BlogDetails" element={<BlogDetails />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/FAQ" element={<FAQ />}/>
-        <Route path="/Login" element={<Login />}/>
+        <Route path="/" element={<Login />}/>
         <Route path="/Pricing" element={<Pricing />}/>
         <Route path="/Pricing2" element={<Pricing2 />}/>
         <Route path="/Pricing3" element={<Pricing3 />}/>
@@ -58,6 +59,7 @@ function App() {
         <Route path="/Cart" element={<Cart/>}/>
         <Route path="/Checkout" element={<Checkout/>}/>
         <Route path="/MyAccount" element={<MyAccount/>}/>
+        <Route path="/Registration" element={<Registration/>}/>
 
 
 

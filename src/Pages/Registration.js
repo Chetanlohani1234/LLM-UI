@@ -1,12 +1,8 @@
 import React from 'react'
 
-const Login = () => {
-
-  const handleClick = () => {
-    // Navigate to www.google.com
-    window.location.href = 'https://rootai.vercel.app/';
-  };
+const Registration = () => {
   return (
+
 <div className="inner-page">
   {/* rts header area start */}
   <header className="header-one header--sticky">
@@ -18,7 +14,7 @@ const Login = () => {
               <img src="assets/images/logo/logo.jpg" alt="logo" />
             </a> */}
 
-                    <a href="/" style={{display: "inline-block"}}>
+                   <a href="/" style={{display: "inline-block"}}>
                         <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
                     </a>
 
@@ -31,17 +27,35 @@ const Login = () => {
                       Home
                     </a>
                     <ul className="submenu">
-                        <li><a href='/IndexOne'>Content Writing 01</a></li>
-                        <li><a href="/">Content Writing 02</a></li>
-                        <li><a href="/IndexThree">Content Writing 03</a></li>
-                        <li><a href="/IndexFour">Ai Chat Bot</a></li>
-                        <li><a href="/IndexFive">Voice Generator</a></li>
-                        <li><a href="/">Image Generator <span>New</span></a></li>
-                        <li><a href="/">Photo Stock <span>New</span></a></li>
+                      <li>
+                        <a href="index.html">Content Writing 01</a>
+                      </li>
+                      <li>
+                        <a href="index-two.html">Content Writing 02</a>
+                      </li>
+                      <li>
+                        <a href="index-three.html">Content Writing 03</a>
+                      </li>
+                      <li>
+                        <a href="index-four.html">Ai Chat Bot</a>
+                      </li>
+                      <li>
+                        <a href="index-five.html">Voice Generator</a>
+                      </li>
+                      <li>
+                        <a href="index-six.html">
+                          Image Generator <span>New</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="index-seven.html">
+                          Photo Stock <span>New</span>
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="links-main" href="/UseCase">
+                    <a className="links-main" href="use-case.html">
                       Use Cases
                     </a>
                   </li>
@@ -50,174 +64,222 @@ const Login = () => {
                       Pages
                     </a>
                     <div className="rts-mega-menu">
-                                                <div className="wrapper">
-                                                    <div className="row g-0">
-                                                        <div className="col-lg-3">
-                                                            <ul className="mega-menu-item">
-                                                                <li>
-                                                                    <a href="/AboutOpenUp">
-                                                                        <img src="assets/images/mega-menu/01.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>About OpenUp</p>
-                                                                            <span>Get know about openup </span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/UseCase">
-                                                                        <img src="assets/images/mega-menu/02.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Use Cases</p>
-                                                                            <span>provide detailed explan</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Pricing">
-                                                                        <img src="assets/images/mega-menu/03.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Pricing</p>
-                                                                            <span>Openup provide pro price</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Login">
-                                                                        <img src="assets/images/mega-menu/04.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Login</p>
-                                                                            <span>Create content by ou</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-lg-3">
-                                                            <ul className="mega-menu-item">
-                                                                <li>
-                                                                    <a href="/Blog">
-                                                                        <img src="assets/images/mega-menu/05.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Blog</p>
-                                                                            <span>Read openup artical</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/UseCasesDetails">
-                                                                        <img src="assets/images/mega-menu/06.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Use Cases Details</p>
-                                                                            <span>provide detailed explan</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Pricing2">
-                                                                        <img src="assets/images/mega-menu/07.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Pricing 2</p>
-                                                                            <span>Openup provide pro price</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Register">
-                                                                        <img src="assets/images/mega-menu/08.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Register</p>
-                                                                            <span>Make your account</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-lg-3">
-                                                            <ul className="mega-menu-item">
-                                                                <li>
-                                                                    <a href="/BlogDetails">
-                                                                        <img src="assets/images/mega-menu/09.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Blog Details</p>
-                                                                            <span>Read openup artical</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/UseCases2">
-                                                                        <img src="assets/images/mega-menu/10.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Use Cases 2</p>
-                                                                            <span>provide detailed explan</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Pricing3">
-                                                                        <img src="assets/images/mega-menu/11.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Pricing 3</p>
-                                                                            <span>Openup provide pro price</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/Reset">
-                                                                        <img src="assets/images/mega-menu/12.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Reset</p>
-                                                                            <span>Rest your possword</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div className="col-lg-3">
-                                                            <ul className="mega-menu-item">
-                                                                <li>
-                                                                    <a href="/Contact">
-                                                                        <img src="assets/images/mega-menu/13.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Contact</p>
-                                                                            <span>Contact with openup</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/UseCasesDetails2">
-                                                                        <img src="assets/images/mega-menu/14.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Use Cases Details 2</p>
-                                                                            <span>provide detailed explan</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="/FAQ">
-                                                                        <img src="assets/images/mega-menu/15.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>FAQ</p>
-                                                                            <span>Do you know openup</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="404.html">
-                                                                        <img src="assets/images/mega-menu/16.svg" alt="icon"/>
-                                                                        <div className="info">
-                                                                            <p>Error</p>
-                                                                            <span>Back to home</span>
-                                                                        </div>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                      <div className="wrapper">
+                        <div className="row g-0">
+                          <div className="col-lg-3">
+                            <ul className="mega-menu-item">
+                              <li>
+                                <a href="about.html">
+                                  <img
+                                    src="assets/images/mega-menu/01.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>About OpenUp</p>
+                                    <span>Get know about openup </span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="use-case.html">
+                                  <img
+                                    src="assets/images/mega-menu/02.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Use Cases</p>
+                                    <span>provide detailed explan</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="pricing.html">
+                                  <img
+                                    src="assets/images/mega-menu/03.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Pricing</p>
+                                    <span>Openup provide pro price</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="log-in.html">
+                                  <img
+                                    src="assets/images/mega-menu/04.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Login</p>
+                                    <span>Create content by ou</span>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-lg-3">
+                            <ul className="mega-menu-item">
+                              <li>
+                                <a href="blog.html">
+                                  <img
+                                    src="assets/images/mega-menu/05.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Blog</p>
+                                    <span>Read openup artical</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="case-details.html">
+                                  <img
+                                    src="assets/images/mega-menu/06.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Use Cases Details</p>
+                                    <span>provide detailed explan</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="pricing-two.html">
+                                  <img
+                                    src="assets/images/mega-menu/07.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Pricing 2</p>
+                                    <span>Openup provide pro price</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="registration.html">
+                                  <img
+                                    src="assets/images/mega-menu/08.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Register</p>
+                                    <span>Make your account</span>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-lg-3">
+                            <ul className="mega-menu-item">
+                              <li>
+                                <a href="blog-details.html">
+                                  <img
+                                    src="assets/images/mega-menu/09.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Blog Details</p>
+                                    <span>Read openup artical</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="use-case-2.html">
+                                  <img
+                                    src="assets/images/mega-menu/10.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Use Cases 2</p>
+                                    <span>provide detailed explan</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="pricing-three.html">
+                                  <img
+                                    src="assets/images/mega-menu/11.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Pricing 3</p>
+                                    <span>Openup provide pro price</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="reset.html">
+                                  <img
+                                    src="assets/images/mega-menu/12.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Reset</p>
+                                    <span>Rest your possword</span>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-lg-3">
+                            <ul className="mega-menu-item">
+                              <li>
+                                <a href="contact.html">
+                                  <img
+                                    src="assets/images/mega-menu/13.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Contact</p>
+                                    <span>Contact with openup</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="case-details-2.html">
+                                  <img
+                                    src="assets/images/mega-menu/14.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Use Cases Details 2</p>
+                                    <span>provide detailed explan</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="faq.html">
+                                  <img
+                                    src="assets/images/mega-menu/15.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>FAQ</p>
+                                    <span>Do you know openup</span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="404.html">
+                                  <img
+                                    src="assets/images/mega-menu/16.svg"
+                                    alt="icon"
+                                  />
+                                  <div className="info">
+                                    <p>Error</p>
+                                    <span>Back to home</span>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </li>
                   <li>
-                    <a className="links-main" href="/Feature">
+                    <a className="links-main" href="feature.html">
                       Feature
                     </a>
                   </li>
@@ -227,21 +289,21 @@ const Login = () => {
                     </a>
                     <ul className="submenu">
                       <li>
-                        <a href="/ProductDetails">Product Details</a>
+                        <a href="shop-details.html">Product Details</a>
                       </li>
                       <li>
-                        <a href="/Cart">Cart</a>
+                        <a href="cart.html">Cart</a>
                       </li>
                       <li>
-                        <a href="/Checkout">Checkout</a>
+                        <a href="checkout.html">Checkout</a>
                       </li>
                       <li>
-                        <a href="/MyAccount">My Account</a>
+                        <a href="log-in.html">My Account</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="links-main" href="/Contact">
+                    <a className="links-main" href="contact.html">
                       Contact
                     </a>
                   </li>
@@ -250,10 +312,10 @@ const Login = () => {
             </div>
             {/* nav end */}
             {/* <div className="button-area">
-              <a href="/Login" className="rts-btn btn-lonly mr--30">
+              <a href="log-in.html" className="rts-btn btn-lonly mr--30">
                 Sign in
               </a>
-              <a href="/AboutOpenUp" className="rts-btn btn-blur">
+              <a href="about.html" className="rts-btn btn-blur">
                 Get Started
               </a>
             </div> */}
@@ -286,11 +348,11 @@ const Login = () => {
         <div className="col-lg-12">
           <div className="breadcrumb-inne">
             <div className="title-area">
-              <h1 className="bread-title">Log In</h1>
+              <h1 className="bread-title">Register</h1>
               <div className="inner-wrapper">
                 <a href="/">Home</a>/
                 <a href="#" className="active">
-                  Log In
+                  Register
                 </a>
               </div>
             </div>
@@ -300,26 +362,23 @@ const Login = () => {
     </div>
   </div>
   {/* rts breadcrumb area end */}
-  {/* login area start */}
-  <div className="log-in-area-start rts-section-gap">
+  {/* rts register area startr */}
+  <div className="rts-register-area rts-section-gap">
     <div className="container">
       <div className="row">
         <div className="col-lg-12">
           {/* single login area start */}
           <div className="single-form-s-wrapper">
             <div className="head">
-              <span>Welcome Back</span>
-              <h5 className="title">Login to continue</h5>
+              <span>Start your Journey</span>
+              <h5 className="title">Create an account</h5>
             </div>
             <div className="body">
-              <form action="#" method="post">
+              <form action="#">
                 <div className="input-wrapper">
-                  <input
-                    type="email"
-                    placeholder="Enter your mail"
-                    required=""
-                  />
-                  <input type="password" placeholder="Password" />
+                  <input type="text" placeholder="Full Name" required="" />
+                  <input type="email" placeholder="Enter your mail" />
+                  <input type="password" placeholder="Enter your Password" />
                 </div>
                 <div className="check-wrapper">
                   <div className="form-check">
@@ -328,24 +387,20 @@ const Login = () => {
                       type="checkbox"
                       defaultValue=""
                       id="flexCheckDefault"
-                      required=""
                     />
                     <label
                       className="form-check-label"
                       htmlFor="flexCheckDefault"
                     >
-                      Default checkbox
+                      I agree to privacy policy &amp; terms
                     </label>
                   </div>
-                  <a href="reset.html">Forgot password?</a>
                 </div>
-                <button type="button" className="rts-btn btn-primary" onClick={handleClick}>
-                  Sign In
-                </button>
+                <button className="rts-btn btn-primary">Create Account</button>
                 <p>
-                  Don't have an account?{" "}
-                  <a className="ml--5" href="/Registration">
-                    Sign Up for Free
+                  If you have an account?{" "}
+                  <a className="ml--5" href="log-in.html">
+                    Sign in
                   </a>
                 </p>
               </form>
@@ -411,7 +466,7 @@ const Login = () => {
       </div>
     </div>
   </div>
-  {/* login area end */}
+  {/* rts register area end */}
   {/* cta area start */}
   {/* cta area start */}
   <div className="rts-cta-area rts-section-gapBottom  bg_faq">
@@ -451,15 +506,14 @@ const Login = () => {
                 {/* <a href="#">
                   <img src="assets/images/logo/01.svg" alt="logo" />
                 </a> */}
-
-                    <a href="/" style={{display: "inline-block"}}>
+                
+                <a href="/" style={{display: "inline-block"}}>
                         <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                     </a>
-
               </div>
               <div className="body">
                 <p className="dsic">
-                  Vagonon is an artificial intelligence trained to automate
+                  Openup is an artificial intelligence trained to automate
                   important tasks such writing optimized product descriptions.
                 </p>
                 <div className="social-style-two">
@@ -497,7 +551,7 @@ const Login = () => {
               <div className="body">
                 <ul className="menu">
                   <li>
-                    <a href="/AboutOpenUp">About Us</a>
+                    <a href="about.html">About Us</a>
                   </li>
                   <li>
                     <a href="#">Community</a>
@@ -670,7 +724,7 @@ const Login = () => {
             </a>
             <ul className="submenu mm-collapse">
               <li>
-                <a className="mobile-menu-link" href="/AboutOpenUp">
+                <a className="mobile-menu-link" href="about.html">
                   About Us
                 </a>
               </li>
@@ -685,7 +739,7 @@ const Login = () => {
                 </a>
               </li>
               <li>
-                <a className="mobile-menu-link" href="/Contact">
+                <a className="mobile-menu-link" href="contact.html">
                   Contact
                 </a>
               </li>
@@ -730,7 +784,7 @@ const Login = () => {
                 </a>
               </li>
               <li>
-                <a className="mobile-menu-link" href="/Login">
+                <a className="mobile-menu-link" href="log-in.html">
                   Log In
                 </a>
               </li>
@@ -777,14 +831,14 @@ const Login = () => {
                 </a>
               </li>
               <li>
-                <a className="mobile-menu-link" href="/Login">
+                <a className="mobile-menu-link" href="log-in.html">
                   My Account
                 </a>
               </li>
             </ul>
           </li>
           <li className="parent">
-            <a href="/Contact" className="main">
+            <a href="contact.html" className="main">
               Contact
             </a>
           </li>
@@ -842,4 +896,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Registration;
