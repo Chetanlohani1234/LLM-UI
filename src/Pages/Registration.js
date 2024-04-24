@@ -1,6 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 const Registration = () => {
+
+  const navigate = useNavigate();
+  
+  const [name,setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  
+  const handleClick = async () => {
+    try {
+      // Call the login API endpoint
+      const response = await axios.post('https://llm-ui-backend.onrender.com/api/user/signUp', {
+        name,
+        email,
+        password,
+        role:'user'
+      });
+
+      // Assuming the API returns a success message or token upon successful login
+      // You can modify this part based on your API response structure
+      if (response.data.success) {
+        // Navigate to the specified URL upon successful login
+        navigate("/");
+        //window.location.href = 'https://rootai.vercel.app/';
+        // Show success toast message
+        toast.success('Signup successful!');
+      } else {
+        // Show error toast message
+        toast.error('SignUp failed. Please try again.');
+      }
+    } catch (error) {
+      //console.error('Login error:', error);
+      // Show error toast message
+      toast.error('An error occurred during SignUp. Please try again later.');
+    }
+  };
   return (
 
 <div className="inner-page">
@@ -11,11 +51,11 @@ const Registration = () => {
         <div className="col-lg-12">
           <div className="header-main-wrapper">
             {/* <a href="index.html" className="logo">
-              <img src="assets/images/logo/logo.jpg" alt="logo" />
+              <img src="assets/images/logo/logo2.jpg" alt="logo" />
             </a> */}
 
                    <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
                     </a>
 
             {/* nav */}
@@ -376,9 +416,24 @@ const Registration = () => {
             <div className="body">
               <form action="#">
                 <div className="input-wrapper">
-                  <input type="text" placeholder="Full Name" required="" />
-                  <input type="email" placeholder="Enter your mail" />
-                  <input type="password" placeholder="Enter your Password" />
+                  <input type="text"
+                   placeholder="Full Name"
+                   required="" 
+                   value={name} 
+                   onChange={e => setName(e.target.value)} 
+                  />
+                  <input type="email"
+                   placeholder="Enter your mail"
+                   required=""
+                   value={email}
+                   onChange={e => setEmail(e.target.value)}
+                   />
+                  <input type="password"
+                   placeholder="Enter your Password"
+                   required=""
+                   value={password}
+                   onChange={e => setPassword(e.target.value)}
+                    />
                 </div>
                 <div className="check-wrapper">
                   <div className="form-check">
@@ -396,10 +451,11 @@ const Registration = () => {
                     </label>
                   </div>
                 </div>
-                <button className="rts-btn btn-primary">Create Account</button>
+                <button className="rts-btn btn-primary" onClick={handleClick}>
+                  Create Account</button>
                 <p>
                   If you have an account?{" "}
-                  <a className="ml--5" href="log-in.html">
+                  <a className="ml--5" href="/">
                     Sign in
                   </a>
                 </p>
@@ -508,7 +564,7 @@ const Registration = () => {
                 </a> */}
                 
                 <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                     </a>
               </div>
               <div className="body">

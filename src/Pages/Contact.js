@@ -14,7 +14,7 @@ const Contact = () => {
             </a> */}
 
                    <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
                     </a>
 
             {/* nav */}
@@ -467,7 +467,7 @@ const Contact = () => {
                 </a> */}
 
                     <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                     </a>
 
               </div>

@@ -1,11 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 
 const Login = () => {
 
-  const handleClick = () => {
-    // Navigate to www.google.com
-    window.location.href = 'https://rootai.vercel.app/';
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleClick = async () => {
+    try {
+      // Call the login API endpoint
+      const response = await axios.post('https://llm-ui-backend.onrender.com/api/user/logIn', {
+        email,
+        password
+      });
+
+      // Assuming the API returns a success message or token upon successful login
+      // You can modify this part based on your API response structure
+      if (response.data.success) {
+        // Navigate to the specified URL upon successful login
+        window.location.href = 'https://rootai.vercel.app/';
+        // Show success toast message
+        toast.success('Login successful!');
+      } else {
+        // Show error toast message
+        toast.error('Login failed. Please try again.');
+      }
+    } catch (error) {
+      //console.error('Login error:', error);
+      // Show error toast message
+      toast.error('An error occurred during login. Please try again later.');
+    }
   };
+
   return (
 <div className="inner-page">
   {/* rts header area start */}
@@ -15,11 +43,11 @@ const Login = () => {
         <div className="col-lg-12">
           <div className="header-main-wrapper">
             {/* <a href="index.html" className="logo">
-              <img src="assets/images/logo/logo.jpg" alt="logo" />
+              <img src="assets/images/logo/logo2.jpg" alt="logo" />
             </a> */}
 
                     <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
                     </a>
 
             {/* nav */}
@@ -317,9 +345,16 @@ const Login = () => {
                   <input
                     type="email"
                     placeholder="Enter your mail"
+                    value={email} 
+                    onChange={e => setEmail(e.target.value)} 
                     required=""
                   />
-                  <input type="password" placeholder="Password" />
+                  <input
+                   type="password"
+                   placeholder="Password" 
+                   value={password} 
+                   onChange={e => setPassword(e.target.value)} 
+                   />
                 </div>
                 <div className="check-wrapper">
                   <div className="form-check">
@@ -340,8 +375,9 @@ const Login = () => {
                   <a href="reset.html">Forgot password?</a>
                 </div>
                 <button type="button" className="rts-btn btn-primary" onClick={handleClick}>
-                  Sign In
+                  logIn 
                 </button>
+                <ToastContainer />
                 <p>
                   Don't have an account?{" "}
                   <a className="ml--5" href="/Registration">
@@ -453,7 +489,7 @@ const Login = () => {
                 </a> */}
 
                     <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                     </a>
 
               </div>

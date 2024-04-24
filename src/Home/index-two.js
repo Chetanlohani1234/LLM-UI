@@ -40,11 +40,11 @@ const IndexTwo = () => {
                         {/* <!-- header top end --> */}
                         <div className="header-main-two header--sticky">
                             {/* <a href="/">
-                                <img src="assets/images/logo/logo.jpg" alt="logo"/>
+                                <img src="assets/images/logo/logo2.jpg" alt="logo"/>
                             </a> */}
 
                         <a href="/" style={{display: "inline-block"}}>
-                            <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                            <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                         </a>
 
 
@@ -1297,7 +1297,7 @@ const IndexTwo = () => {
                                     </div> */}
 
                    <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
                     </a>
 
                                     <div class="body">
