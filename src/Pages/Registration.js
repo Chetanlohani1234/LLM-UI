@@ -11,10 +11,15 @@ const Registration = () => {
   const [name,setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isChecked, setIsChecked] = useState(false);
 
   
   const handleClick = async () => {
     try {
+      if (!isChecked) {
+        toast.error("Please check agree to the privacy policy & terms.");
+        return; // Exit function if checkbox is not checked
+      }
       // Call the login API endpoint
       const response = await axios.post('https://llm-ui-backend.onrender.com/api/user/signUp', {
         name,
@@ -38,8 +43,12 @@ const Registration = () => {
     } catch (error) {
       //console.error('Login error:', error);
       // Show error toast message
-      toast.error('An error occurred during SignUp. Please try again later.');
+      toast.error('user already exists. Only one user allowed. Please try again .');
     }
+  };
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked); // Toggle checkbox state
   };
   return (
 
@@ -442,6 +451,8 @@ const Registration = () => {
                       type="checkbox"
                       defaultValue=""
                       id="flexCheckDefault"
+                      checked={isChecked}
+                      onChange={handleCheckboxChange}
                     />
                     <label
                       className="form-check-label"
@@ -451,8 +462,9 @@ const Registration = () => {
                     </label>
                   </div>
                 </div>
-                <button className="rts-btn btn-primary" onClick={handleClick}>
+                <button type='button' className="rts-btn btn-primary" onClick={handleClick}>
                   Create Account</button>
+                  <ToastContainer />
                 <p>
                   If you have an account?{" "}
                   <a className="ml--5" href="/">
