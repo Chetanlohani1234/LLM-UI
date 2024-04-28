@@ -13,39 +13,77 @@ const Registration = () => {
   const [password, setPassword] = useState('');
   const [isChecked, setIsChecked] = useState(false);
 
-  
   const handleClick = async () => {
     try {
       if (!isChecked) {
         toast.error("Please check agree to the privacy policy & terms.");
         return; // Exit function if checkbox is not checked
       }
-      // Call the login API endpoint
+  
+      // Call the signup API endpoint
       const response = await axios.post('https://llm-ui-backend.onrender.com/api/user/signUp', {
         name,
         email,
         password,
-        role:'user'
+        role: 'user'
       });
-
-      // Assuming the API returns a success message or token upon successful login
+  
+      // Assuming the API returns a success message or token upon successful signup
       // You can modify this part based on your API response structure
       if (response.data.success) {
-        // Navigate to the specified URL upon successful login
-        navigate("/");
-        //window.location.href = 'https://rootai.vercel.app/';
         // Show success toast message
+        navigate("/");
         toast.success('Signup successful!');
+       
       } else {
-        // Show error toast message
-        toast.error('SignUp failed. Please try again.');
+        // Check if the error message is specific to user existence
+        if (response.data.message === "user already exists. Only one user allowed.") {
+          // Show specific error toast message for user existence
+          toast.error('User already exists. Only one user allowed.');
+        } else {
+          // Show general error toast message
+          toast.error('Signup failed. Please try again.');
+        }
       }
     } catch (error) {
-      //console.error('Login error:', error);
       // Show error toast message
-      toast.error('user already exists. Only one user allowed. Please try again .');
+      toast.error('An error occurred. Please try again.');
     }
   };
+  
+
+  // const handleClick = async () => {
+  //   try {
+  //     if (!isChecked) {
+  //       toast.error("Please check agree to the privacy policy & terms.");
+  //       return; // Exit function if checkbox is not checked
+  //     }
+  //     // Call the login API endpoint
+  //     const response = await axios.post('https://llm-ui-backend.onrender.com/api/user/signUp', {
+  //       name,
+  //       email,
+  //       password,
+  //       role:'user'
+  //     });
+
+  //     // Assuming the API returns a success message or token upon successful login
+  //     // You can modify this part based on your API response structure
+  //     if (response.data.success) {
+  //       // Navigate to the specified URL upon successful login
+  //      // navigate("/");
+  //       //window.location.href = 'https://rootai.vercel.app/';
+  //       // Show success toast message
+  //       toast.success('Signup successful!');
+  //     } else {
+  //       // Show error toast message
+  //       toast.error('SignUp failed. Please try again.');
+  //     }
+  //   } catch (error) {
+  //     //console.error('Login error:', error);
+  //     // Show error toast message
+  //     toast.error('user already exists. Only one user allowed. Please try again .');
+  //   }
+  // };
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked); // Toggle checkbox state
@@ -64,7 +102,8 @@ const Registration = () => {
             </a> */}
 
                    <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                     <h1 style={{color:"white"}}>rootAI</h1>
+                        {/* <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/> */}
                     </a>
 
             {/* nav */}
@@ -509,7 +548,7 @@ const Registration = () => {
               </div>
               {/* ingle end */}
               {/* ingle */}
-              <div className="single">
+              {/* <div className="single">
                 <div className="icon">
                   <svg
                     width={15}
@@ -525,7 +564,7 @@ const Registration = () => {
                   </svg>
                 </div>
                 <p>Continue with Google</p>
-              </div>
+              </div> */}
               {/* ingle end */}
             </div>
           </div>
@@ -576,12 +615,13 @@ const Registration = () => {
                 </a> */}
                 
                 <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                 <h1 style={{color:"white"}}>rootAI</h1>
+                        {/* <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/> */}
                     </a>
               </div>
               <div className="body">
                 <p className="dsic">
-                  Openup is an artificial intelligence trained to automate
+                  rootAI is an artificial intelligence trained to automate
                   important tasks such writing optimized product descriptions.
                 </p>
                 <div className="social-style-two">
@@ -619,7 +659,7 @@ const Registration = () => {
               <div className="body">
                 <ul className="menu">
                   <li>
-                    <a href="about.html">About Us</a>
+                    <a href="#">About Us</a>
                   </li>
                   <li>
                     <a href="#">Community</a>
@@ -627,15 +667,15 @@ const Registration = () => {
                   <li>
                     <a href="#">Careers</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Affiliate Program</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
             {/* single sized  footer end */}
             {/* single sized  footer  */}
-            <div className="footer-singl-wized">
+            {/* <div className="footer-singl-wized">
               <div className="head">
                 <h6 className="title">Use Cases</h6>
               </div>
@@ -655,7 +695,7 @@ const Registration = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             {/* single sized  footer end */}
             {/* single sized  footer  */}
             <div className="footer-singl-wized input-area">
@@ -691,8 +731,8 @@ const Registration = () => {
           {/* footer-copyright-area start */}
           <div className="copy-right-start-two">
             <p>
-              <a href="https://reactheme.com/" target="_blank">
-                Reactheme©
+              <a href="https://vagonon.co.in/" target="_blank">
+               vagonon©
               </a>{" "}
               2023. All Rights Reserved.
             </p>

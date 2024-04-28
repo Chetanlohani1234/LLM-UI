@@ -47,7 +47,8 @@ const Login = () => {
             </a> */}
 
                     <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/>
+                       <h1 style={{color:"white"}}>rootAI</h1>
+                        {/* <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px",marginTop:"10px",marginBottom:"10px"}}/> */}
                     </a>
 
             {/* nav */}
@@ -422,7 +423,7 @@ const Login = () => {
               </div>
               {/* ingle end */}
               {/* ingle */}
-              <div className="single">
+              {/* <div className="single">
                 <div className="icon">
                   <svg
                     width={15}
@@ -438,7 +439,7 @@ const Login = () => {
                   </svg>
                 </div>
                 <p>Continue with Google</p>
-              </div>
+              </div> */}
               {/* ingle end */}
             </div>
           </div>
@@ -489,13 +490,14 @@ const Login = () => {
                 </a> */}
 
                     <a href="/" style={{display: "inline-block"}}>
-                        <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/>
+                      <h1 style={{color:"white"}}>rootAI</h1>
+                        {/* <img src="assets/images/logo/logo2.jpg" alt="logo" style={{width: "200px", height: "100px"}}/> */}
                     </a>
 
               </div>
               <div className="body">
                 <p className="dsic">
-                  Vagonon is an artificial intelligence trained to automate
+                  rootAI is an artificial intelligence trained to automate
                   important tasks such writing optimized product descriptions.
                 </p>
                 <div className="social-style-two">
@@ -533,7 +535,7 @@ const Login = () => {
               <div className="body">
                 <ul className="menu">
                   <li>
-                    <a href="/AboutOpenUp">About Us</a>
+                    <a href="#">About Us</a>
                   </li>
                   <li>
                     <a href="#">Community</a>
@@ -541,15 +543,15 @@ const Login = () => {
                   <li>
                     <a href="#">Careers</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">Affiliate Program</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
             {/* single sized  footer end */}
             {/* single sized  footer  */}
-            <div className="footer-singl-wized">
+            {/* <div className="footer-singl-wized">
               <div className="head">
                 <h6 className="title">Use Cases</h6>
               </div>
@@ -569,7 +571,7 @@ const Login = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             {/* single sized  footer end */}
             {/* single sized  footer  */}
             <div className="footer-singl-wized input-area">
@@ -605,10 +607,10 @@ const Login = () => {
           {/* footer-copyright-area start */}
           <div className="copy-right-start-two">
             <p>
-              <a href="https://reactheme.com/" target="_blank">
-                Reactheme©
+              <a href="https://vagonon.co.in/" target="_blank">
+              vagonon©
               </a>{" "}
-              2023. All Rights Reserved.
+              2024. All Rights Reserved.
             </p>
             <ul>
               <li>

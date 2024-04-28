@@ -62,20 +62,6 @@ function App() {
         <Route path="/Registration" element={<Registration/>}/>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
       </Routes>
      </BrowserRouter>
   
